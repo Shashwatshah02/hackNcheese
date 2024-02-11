@@ -44,7 +44,7 @@ const IssueCards = () => {
     <SimpleGrid columns={[1, null, 2]} spacing={10}>
         {bug?.map(issue => (
         <div className="ag-courses_item" key={issue.id}>
-        <a href="#" className="ag-courses-item_link">
+        <a href={issue.html_url} className="ag-courses-item_link">
           <div className="ag-courses-item_bg"></div>
   
           <div className="ag-courses-item_title">
@@ -65,7 +65,7 @@ const IssueCards = () => {
     <SimpleGrid columns={[1, null, 2]} spacing={10}>
         {good_first_issue?.map(issue => (
         <div className="ag-courses_item" key={issue.id}>
-        <a href="#" className="ag-courses-item_link">
+        <a href={issue.html_url} className="ag-courses-item_link">
           <div className="ag-courses-item_bg"></div>
   
           <div className="ag-courses-item_title">
@@ -86,7 +86,7 @@ const IssueCards = () => {
     <SimpleGrid columns={[1, null, 2]} spacing={10}>
         {documentation?.map(issue => (
         <div className="ag-courses_item" key={issue.id}>
-        <a href="#" className="ag-courses-item_link">
+        <a href={issue.html_url} className="ag-courses-item_link">
           <div className="ag-courses-item_bg"></div>
   
           <div className="ag-courses-item_title">
@@ -107,7 +107,7 @@ const IssueCards = () => {
     <SimpleGrid columns={[1, null, 2]} spacing={10}>
         {duplicates?.map(issue => (
         <div className="ag-courses_item" key={issue.id}>
-        <a href="#" className="ag-courses-item_link">
+        <a href={issue.html_url} className="ag-courses-item_link">
           <div className="ag-courses-item_bg"></div>
   
           <div className="ag-courses-item_title">
@@ -128,7 +128,7 @@ const IssueCards = () => {
     <SimpleGrid columns={[1, null, 2]} spacing={10}>
         {enhancement?.map(issue => (
         <div className="ag-courses_item" key={issue.id}>
-          <a href="#" className="ag-courses-item_link">
+          <a href={issue.html_url} className="ag-courses-item_link">
             <div className="ag-courses-item_bg"></div>
     
             <div className="ag-courses-item_title">

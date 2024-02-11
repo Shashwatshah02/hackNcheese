@@ -67,6 +67,20 @@ const SideBar = () => {
         >
           Project Recommendation
         </Button>
+        <Button
+          bg={location.pathname === '/upcoming-events' ? 'blue.400' : 'gray.200'}
+          onClick={() => navigate(`/upcoming-events`)}
+          width="100%"
+        >
+          Upcoming Events
+        </Button>
+        <Button
+          bg={location.pathname === '/email' ? 'blue.400' : 'gray.200'}
+          onClick={() => navigate(`/email`)}
+          width="100%"
+        >
+          Email Reference
+        </Button>
       </Stack>
       <a href="http://43.204.130.212/" target="_blank" rel="noreferrer">
         <Button bg="gray.200" width="100%">Code in Collab</Button>

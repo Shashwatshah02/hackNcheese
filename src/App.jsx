@@ -24,8 +24,11 @@ import Chat from "./chat/Chat.jsx"
 import Profile_Form from "./components/Sections/Profile_Form.jsx";
 import ProjectRec from "./components/Elements/ProjectRec.jsx";
 import ProjectDash from "./components/Sections/ProjectDash.jsx";
+import Upcoming_Events from "./components/Upcoming_Events.jsx";
+import EmailsDash from "./components/Sections/EmailsDash.jsx";
 
 export default function App() {
+  
   return (
     <>
     <ChakraProvider>
@@ -58,6 +61,8 @@ export default function App() {
           <Route path='/repo' element={<><ProjectDash /></>} />
           <Route path='/userProfile' element={<><Profile_Form /></>} />
           <Route path='/chat' element={<><Chat /></>} />
+          <Route path='/upcoming-events' element={<><Upcoming_Events /></>} />
+          <Route path='/email' element={<><EmailsDash /></>} />
 
 
 

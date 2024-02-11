@@ -4,7 +4,7 @@ import TypingAnimation from './TypingAnimation';
 
 const CustomLoadingAnimation = () => {
   return (
-    <Flex direction="column" alignItems="center" justifyContent="center" height="60vh">
+    <Flex direction="column" alignItems="center" justifyContent="center" height="30vh">
       <Box mb="4">
         <VStack spacing="4">
           <HStack spacing="4">
@@ -17,7 +17,7 @@ const CustomLoadingAnimation = () => {
           </HStack>
         </VStack>
       </Box>
-      <TypingAnimation/>
+
     </Flex>
   );
 };

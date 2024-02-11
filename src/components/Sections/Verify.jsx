@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import CustomLoadingAnimation from '../Elements/CustomLoadingAnimation';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import TypingAnimation from '../Elements/TypingAnimation';
 
 const Verify = () => {
     const [email, setEmail] = useState('');
@@ -73,6 +74,7 @@ const Verify = () => {
       {isLoading && (
         <Box mt={['10px', '50px', '100px']}>
           <CustomLoadingAnimation />
+          <TypingAnimation/>
         </Box>
       )}
     </Box>

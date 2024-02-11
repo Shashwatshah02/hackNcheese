@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CustomLoadingAnimation from './CustomLoadingAnimation'
 
 const cardData = [
   {
@@ -85,7 +86,7 @@ const ProjectRec = () => {
         }}
       />
       {isLoading ? (
-        <div className="loader" style={{ border: '16px solid #f3f3f3', borderRadius: '50%', borderTop: '16px solid #3498db', width: '120px', height: '120px', animation: 'spin 2s linear infinite' }}></div>
+        <CustomLoadingAnimation></CustomLoadingAnimation>
       ) : (
         <>
           <div style={{ marginTop: '20px', textAlign: 'left', width: '80%', maxWidth: '500px' }}>
